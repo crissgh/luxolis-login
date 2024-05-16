@@ -1,0 +1,49 @@
+.page-container {
+  width: 100%;
+  height: 100%;
+  background: #2148c0;
+  background-image: url(../../../assets/BG.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  & > .login-form {
+    font-family: Montserrat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 300px;
+    height: 100%;
+    gap: 15px;
+
+    & > .form-fields {
+      margin-top: 60px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      & > .error {
+        margin-top: -10px;
+        height: 20px;
+        color: #da6565;
+        font-size: 14px;
+      }
+    }
+
+    & > .forgot-pass {
+      width: 100%;
+      text-align: right;
+      color: #fff;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .page-container {
+    background-image: none;
+  }
+}
