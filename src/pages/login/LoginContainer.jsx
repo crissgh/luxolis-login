@@ -42,6 +42,7 @@ const Login = () => {
 
   const handleUserData = (e, field) => {
     setUserData({ ...userData, [field]: e.target.value })
+    setErrorMessage('')
   }
 
   const handlePasswordValidation = () => {
