@@ -47,7 +47,6 @@ const Login = () => {
   const handlePasswordValidation = () => {
     // this is better done with formik+yup but it takes some setup (time)
     if (userData.password.length > 0 && !isValidPassword(userData.password)) {
-      console.log('does')
       setErrorMessage('Wrong combination')
     } else {
       setErrorMessage('')
